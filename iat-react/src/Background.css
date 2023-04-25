@@ -1,0 +1,44 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap');
+
+input:focus, select:focus {
+    outline: none;
+}
+
+button:focus, select:focus {
+    outline: none;
+}
+
+.container{
+    background-image: url('./assets/images/pattern-bg-mobile.png');
+    background-repeat: no-repeat;
+    text-align: center ;
+
+}
+
+.header{
+    font-size: normal;
+    font-weight: 700;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+    margin-top: 0;
+    padding: 3% 1% ;
+    
+}
+.icon-bg{
+    background-color: black;
+    padding: 4vw;
+    border-top-right-radius:  10px;
+    border-bottom-right-radius: 10px ;
+}
+.input-field{
+    padding: 4vw;
+    border-bottom-left-radius: 10px ;
+    border-top-left-radius: 10px  ;
+    width:55vw;
+}
+.input-field-container{
+    padding-bottom: 10vh;
+}
