@@ -34,7 +34,7 @@ button:focus, select:focus {
     border-bottom-right-radius: 10px ;
 }
 .input-field{
-    padding: 4vw;
+    padding: 3vw;
     border-bottom-left-radius: 10px ;
     border-top-left-radius: 10px  ;
     width:55vw;
