@@ -1,13 +1,7 @@
 const Ipinfo = ({IPaddress, location, timezone, ISP, }) => {
+    //192.212.174.101
     return ( 
-        <div className="I-P-A-Info rounded-lg shadow-lg " style={{ 
-            position: 'absolute', top: '33vh',
-            left: '50%', transform: 'translate(-50%, -50%)',
-            zIndex: '100', backgroundColor: 'white',
-            padding: '0.5vh 2vw', width: '70vw',
-            textAlign: 'center', 
-            boxShadow:''
-         }}>
+        <div className="  absolute top-48 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 bg-white py-1 px-8 w-10/12  h-10/12 text-center shadow-lg rounded-lg">
             <div className="">
             <p className="">IPaddress:{''}</p>
                 <p className="">{IPaddress}</p>

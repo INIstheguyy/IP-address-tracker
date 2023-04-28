@@ -1,9 +1,9 @@
 .I-P-A-Info{
+    position: 'absolute';
+     top: '33vh';
     background-color: white;
 }
-.I-P-A-Info > div{
-  
-}
+
 
 body{
     position: relative;
