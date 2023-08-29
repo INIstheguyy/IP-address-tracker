@@ -13,7 +13,8 @@ button:focus, select:focus {
 
 .container{
     background-image: url('./assets/images/pattern-bg-mobile.png');
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+
     text-align: center ;
 
 }
