@@ -8,7 +8,7 @@ import MapComponent from "./Map";
 function App() {
   const [ipInput, setIpInput] = useState("");
   const [ipAddress, setIpAddress] = useState(null);
-  const [fetched, setFetched] = useState(false);
+
 
 
   async function handleOnClick() {
@@ -25,7 +25,7 @@ function App() {
       console.log(response);
       const data = response.data;
       setIpAddress(data);
-      setFetched(true);
+
     } catch (error) {
       console.log(error.response);
       setIpInput("");
@@ -34,13 +34,14 @@ function App() {
   }
 
   return (
-    <div className="App" style={{ position: "relative" }}>
+    <div className="App" >
       <BkGrd
+      className=""
         ipInput={ipInput}
         setIpInput={setIpInput}
         handleOnClick={handleOnClick}
       />
-      {fetched && <Ipinfo data={ipAddress} />}
+       <Ipinfo  data={ipAddress} />
       <MapComponent data={ipAddress} />
     </div>
   );

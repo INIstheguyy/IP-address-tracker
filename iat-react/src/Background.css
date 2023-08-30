@@ -30,16 +30,24 @@ button:focus, select:focus {
 }
 .icon-bg{
     background-color: black;
-    padding: 4vw;
+    padding: 10px;
     border-top-right-radius:  10px;
     border-bottom-right-radius: 10px ;
+    outline: none;
+    border: 0 ;
 }
 .input-field{
-    padding: 3vw;
+    padding: 10px;
     border-bottom-left-radius: 10px ;
     border-top-left-radius: 10px  ;
-    width:55vw;
+    width:70vw;
 }
 .input-field-container{
     padding-bottom: 10vh;
+}
+
+@media screen and (min-width:375px) {
+    .container{
+        background-image: url(./assets/images/pattern-bg-desktop.png);
+    }
 }

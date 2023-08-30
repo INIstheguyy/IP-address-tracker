@@ -1,9 +1,56 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+  @import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed&family=Rubik:wght@700&display=swap');
 
 body{
   margin: 0;
   padding: 0 ;
   box-sizing: border-box;
+}
+
+.App{
+  position: relative;
+  background-color: black;
+}
+
+.info-div{
+  text-align: center;
+  width: 70vw;
+  position: absolute;
+  z-index: 5;
+  background-color: white;
+  top: 20vh;
+  margin: 0 auto;
+  border-radius: 5px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.info{
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+.field-tag{
+  color: gray;
+  font-size: 12px;
+}
+
+.field-result{
+  margin-top: 0;
+}
+
+@media screen and (min-width:580px) {
+  .info-div{
+    top:40vh;
+  }
+}
+
+@media screen and (min-width:768px) {
+  .info-div{
+    top:25vh;
+    display: flex;
+    justify-content: space-evenly; 
+    align-items: center; 
+  }
+
+  
 }

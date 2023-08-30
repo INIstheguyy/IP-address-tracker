@@ -1,9 +1,10 @@
 import React from "react";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
+import './index.css'
 
 import L from 'leaflet';
-import iconUrl from './assets/images/marker.png'; // Replace with your custom marker image URL
+import iconUrl from './assets/images/marker-removebg-preview.png'; // Replace with your custom marker image URL
 
 const customIcon = new L.Icon({
   iconUrl,
@@ -34,7 +35,7 @@ function MapComponent({ data }) {
       key={mapKey}
       center={position}
       zoom={19}
-      style={{ height: "100vh" }}
+      style={{ height: "100vh", width:"100%", zIndex:"-1", position: "absolute"}}
     >
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
